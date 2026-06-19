@@ -84,3 +84,29 @@ document.addEventListener('DOMContentLoaded', function (){
     });
  }
 });
+ const menuItems =[ 
+    "Cappuccino", 
+    "Flat White", 
+    "Macchiato", 
+    "Caffe Mocha", 
+    "v60 Specialty Coffee",
+    "Iced Latte Matcha", 
+    "Lindt Hot Chocolate", 
+    "Red Bourbon Specialty Coffee", 
+    "Girma Specialty Coffee",
+    "Plain Croissant", 
+    "Chocolate Croissant", 
+    "Burnt Basque Cheesecake", 
+    "Swedish Bun", 
+    "Darch Choc Tahini Cookie"
+ ]
+ const suggestionButton = document.getElementById('suggestion-button');
+ const suggestionText = document.getElementById('suggestion-text');
+
+ function generateSuggestion(){
+    const randomIndex = Math.floor(Math.random() * menuItems.length);
+    const suggestion = menuItems[randomIndex];
+    suggestionText.innerHTML = "We highly recommend our <b>" + suggestion + "</b>! today!";
+ }
+
+ suggestionButton.addEventListener('click', generateSuggestion);
