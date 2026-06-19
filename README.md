@@ -11,3 +11,11 @@ PART 2
 This part of the website was about styling. I made use of different styles to make the document more alive. This project delivers a responsive and productive interface foR Here. cafe. It was designed with a modern minimalist aesthetic featuring an organic match green and warm crean color palette. the objective wa to tranform a static layout into a interactive one that scales seamlessly across all viewpoints while maintaining strict alignment integrity.
 W3Schools, 2026. CSS Flexbox. [online] Available at: https://www.w3schools.com/css/css3_flexbox.asp [Accessed 29 May 2026].
 W3Schools, 2026. CSS Responsive Web Design - Media Queries. [online] Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp [Accessed 29 May 2026]. 
+
+PART 3
+The changes that were carried over from Part 2 were the home page renaimg and the updating of the navigation links.
+The overwiew of what was done in Part 3 were:
+1. Meal suggestion generator, this was to make it eady for the custome to use incase of uncerntainty when chosing a meal.
+2. high-impact daily promotional pop-up modal in the index page. Thus acts as a bold, conversion-focused [romotional hook mirroring top=tier design architecture(inspired by the premium aesthetic of sites like Pantry by Marble
+3. The main focus was to ensure that the webpages move seemlessly.
+
