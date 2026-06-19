@@ -110,3 +110,26 @@ document.addEventListener('DOMContentLoaded', function (){
  }
 
  suggestionButton.addEventListener('click', generateSuggestion);
+ 
+const promoModal = document.getElementById("promo-modal");
+const closeModalBtn = document.getElementById("close-modal-btn");
+
+if (promoModal && closeModalBtn) {
+    
+    closeModalBtn.addEventListener("click", function() {
+        promoModal.style.opacity = "0";
+        setTimeout(function() {
+            promoModal.style.display = "none";
+        }, 300); 
+    });
+
+    promoModal.addEventListener("click", function(event) {
+        if (event.target === promoModal) {
+            promoModal.style.opacity = "0";
+            setTimeout(function() {
+                promoModal.style.display = "none";
+            }, 300);
+        }
+    });
+}
+ 
