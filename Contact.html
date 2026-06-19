@@ -28,16 +28,15 @@
     <hr>
         
     <main>
-        <h1>from concrete to culture, every road leads to one place. meet us <a href="https://maps.app.goo.gl/4bPUFYBwTpL7FxMP8" 
-            target="_blank">here.</a> for coffee.</h1><!--the word here.has a link to a map-->
+        <h1>from concrete to culture, every road leads to one place. meet us here. for coffee.</h1>
 
         <h3>our location</h3> 
         <address>8 tyrwhitt avenue, Rosebank, Johannesburg</address>
         <br>
         
-        <img src="images/image27.jpeg" alt="here." width="400px" height="350px">
-        <img src="images/image29.jpeg" alt="Apicture of the here building" width="400px" height="350px">
-        
+       <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458989.2054973574!2d27.753293406249984!3d-26.005626871864408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d1cd244eadd%3A0x48e4d56ed6b2fadc!2shere%20joburg!5e0!3m2!1sen!2sus!4v1781879899940!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
         
         <h3><i>operating hours</i></h3>
         <i>monday - friday: 7am - 6pm</i><br>
@@ -51,16 +50,25 @@
         <li><a href="mailto:info@here.joburg.com">email: info@here.joburg.com</a></li>
         </ul>
         </p>
+        
         <h2>join us</h2>
-        <form action="">
-            Name:<input type="text" required placeholder="Liv Singo" autocomplete="given-name"><br><br>
-            Email:<input type="email" required placeholder="livsingo@gmail.com"><br><br>
-            Age:<input type="number" required placeholder="21"><br><br>
-            Activity of interest:<input type="text" required placeholder="run or pilates club; arts and performance"><br>
+        <form id="contactForm" novalidate>
+            Name:<input type="text" id="userName" required placeholder="Liv Singo" autocomplete="given-name"><br><br>
+            Email:<input type="email" id="userEmail" required placeholder="livsingo@gmail.com"><br><br>
+            Age:<input type="number" id="userAge" required placeholder="21"><br>
+            Activity of interest:
+            <select id="userActivity">
+                <option value="">Select an Activity</option>
+                <option value="Run or Pilates club">Run or Pilates club</option>
+                <option value="Arts and Performance">Arts and Performance</option>
+            </select><br><br>
             Gender:<br>
-            <input type="radio" name="gender">Female</input><br><br>
-            <input type="radio" name="gender">Male</input><br><br>
-            <input type="radio" name="gender">Other</input><br><br>
+            <input type="radio" name="gender" value="Female" id="genderFemale">Female</input><br><br>
+            <input type="radio" name="gender" value="Male" id="genderMale">Male</input><br><br>
+            <input type="radio" name="gender" value="Other" id="genderOther">Other</input><br><br>
+            Your Message:<br>
+            <textarea id="userMessage" placeholder="here. to  listen"></textarea><br>
+            <div id="Messagebox"></div>
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
         </form>

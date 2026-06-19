@@ -214,7 +214,9 @@ form h2{
 }
 form input[type="text"],
 form input[type="email"],
-form input[type="number"]{
+form input[type="number"],
+form select,
+form textarea{
     width: 100%;
     padding: 12px 16px;
     margin-top: 8px;
@@ -227,9 +229,15 @@ form input[type="number"]{
     color: #4A3B32;
     transition: all 0.3s ease;
 }
+form textarea{
+    resize: vertical;
+    min-height: 120px;
+}
 form input[type="text"]:focus,
 form input[type="email"]:focus, 
-form input[type="number"]:focus{
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus{
     outline: none;
     border-color: #5C6E58;
     background-color: #FFFFFF;
@@ -282,4 +290,34 @@ footer{
     border-top: 1px solid #E6D5C3;
     margin-top: 30px;
 }
-
+.map-container {
+   width: 100%;
+   max-width: 800px;
+   margin: 20px auto;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.map-container iframe {
+   width: 100%;
+   display: block;
+}
+#Messagebox {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+    transition: all 0.3s ease;
+}
+#Messagebox.success {
+    background-color: #FDFBF7;
+    color: #5C6E58;
+    border: 1px solid #C2D1C0;
+}
+#Messagebox.error {
+    background-color: #FDFBF7;
+    color: #7A2E2E;
+    border: 1px solid #E2E8E1;
+}
